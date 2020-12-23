@@ -1,0 +1,370 @@
+<?php
+$CPF = $_SESSION['CPF'];
+?>
+<html>
+<head>
+<!-- <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> -->
+<script>
+function dynamicdropdown(listindex)
+            {
+                document.getElementById("subcategory").length = 0;
+                switch (listindex)
+                {
+                    case "NBP Green Heights" :
+                        document.getElementById("subcategory").options[0]=new Option("Please select office","");
+                        document.getElementById("subcategory").options[1]=new Option("Regional Office","Regional Office");
+                        document.getElementById("subcategory").options[2]=new Option("Reception","Reception");
+                        document.getElementById("subcategory").options[3]=new Option("Office of CVO","Office of CVO");
+                        document.getElementById("subcategory").options[4]=new Option("WOB","WOB");
+                        document.getElementById("subcategory").options[5]=new Option("Office of ED-Chief Labs","Office of ED-Chief Labs");
+                        document.getElementById("subcategory").options[6]=new Option("Offshore Logistics","Offshore Logistics");
+                        document.getElementById("subcategory").options[7]=new Option("Vigilance Section","Vigilance Section");
+                        document.getElementById("subcategory").options[8]=new Option("IMPETUS Group","IMPETUS Group");
+                        document.getElementById("subcategory").options[9]=new Option("OFFSHORE HSE","OFFSHORE HSE");
+                        document.getElementById("subcategory").options[10]=new Option("Collectives","Collectives");
+                        
+                        break;
+                    
+                    case "11 High" :
+                        document.getElementById("subcategory").options[0]=new Option("Please select office","");
+                        document.getElementById("subcategory").options[1]=new Option("Engineering Services","Engineering Services");
+                        document.getElementById("subcategory").options[2]=new Option("Corporate Logging Services","Corporate Logging Services");
+                        document.getElementById("subcategory").options[3]=new Option("Logging Services-Mumbai","Logging Services-Mumbai");
+                        document.getElementById("subcategory").options[4]=new Option("Drilling Services","Drilling Services");
+                        document.getElementById("subcategory").options[5]=new Option("Well Services","Well Services");
+                        document.getElementById("subcategory").options[6]=new Option("Offshore Logistics","Offshore Logistics");
+                        document.getElementById("subcategory").options[7]=new Option("Infocom Services","Infocom Services");
+                        document.getElementById("subcategory").options[8]=new Option("HR/ER,Services","HR/ER,Services");
+                        document.getElementById("subcategory").options[9]=new Option("Civil Maintainence","Civil Maintainence");
+                        document.getElementById("subcategory").options[10]=new Option("Electrical Maintainence","Electrical Maintainence");
+                        document.getElementById("subcategory").options[11]=new Option("Security","Security");
+                        document.getElementById("subcategory").options[12]=new Option("Fire Section","Fire Section");
+                        document.getElementById("subcategory").options[13]=new Option("Facility Nos","Facility Nos");
+                        document.getElementById("subcategory").options[14]=new Option("Govt.Audit","Govt.Audit");
+                        
+                        break;
+                    case "Vasudhara Bhavan" :
+                        document.getElementById("subcategory").options[0]=new Option("Please select office","");
+                        document.getElementById("subcategory").options[1]=new Option("MH Asset","MH Asset");
+                        document.getElementById("subcategory").options[2]=new Option("Regional Office","Regional Office");
+                        document.getElementById("subcategory").options[3]=new Option("Security","Security");
+                        document.getElementById("subcategory").options[4]=new Option("Govt Audit","Govt Audit");
+                        document.getElementById("subcategory").options[5]=new Option("Control Room-OCC 7th Floor","Control Room-OCC 7th Floor");
+                        document.getElementById("subcategory").options[6]=new Option("Miscellaneous","Miscellaneous");
+                        
+                        break;
+                    case "Panvel" :
+                        document.getElementById("subcategory").options[0]=new Option("Please select office","");
+                        document.getElementById("subcategory").options[1]=new Option("IOGPT","IOGPT");
+                        document.getElementById("subcategory").options[2]=new Option("IEOT","IEOT");
+                        document.getElementById("subcategory").options[3]=new Option("GHRTC","GHRTC");
+                        document.getElementById("subcategory").options[4]=new Option("Logging Services","Logging Services");
+                        document.getElementById("subcategory").options[5]=new Option("HR/ER Services","HR/ER Services");
+                        document.getElementById("subcategory").options[6]=new Option("Vigilance Section","Vigilance Section");
+                        document.getElementById("subcategory").options[7]=new Option("Infocom Services","Infocom Services");
+                        document.getElementById("subcategory").options[8]=new Option("Electrical Maintainence","Electrical Maintainence");
+                        document.getElementById("subcategory").options[9]=new Option("Transport","Transport");
+                        document.getElementById("subcategory").options[10]=new Option("Misc","Misc");
+                        document.getElementById("subcategory").options[11]=new Option("Chemistry Lab","Chemistry Lab");
+                        document.getElementById("subcategory").options[12]=new Option("Geology Lab","Geology Lab");
+                        document.getElementById("subcategory").options[13]=new Option("Residential Colony","Residential Colony");
+                        document.getElementById("subcategory").options[14]=new Option("Logging Services","Logging Services");
+                        break;
+					 case "Nhava" :
+                        document.getElementById("subcategory").options[0]=new Option("Please select office","");
+                        document.getElementById("subcategory").options[1]=new Option("HNSB","HNSB");
+                        document.getElementById("subcategory").options[1]=new Option("Logistics ATF Cell","Logistics ATF Cell");
+                        document.getElementById("subcategory").options[1]=new Option("Nhava Modernization Project","Nhava Modernization Project");
+                        document.getElementById("subcategory").options[1]=new Option("Logging Operations","Logging Operations");
+                        document.getElementById("subcategory").options[1]=new Option("Radio Room","Radio Room");
+                        document.getElementById("subcategory").options[1]=new Option("AIMT","AIMT");
+                        document.getElementById("subcategory").options[1]=new Option("HSE","HSE");
+                        document.getElementById("subcategory").options[1]=new Option("MH Asset","MH Asset");
+                        document.getElementById("subcategory").options[1]=new Option("B&S Asset","B&S Asset");
+                        document.getElementById("subcategory").options[1]=new Option("Neelam Heera Asset","Neelam Heera Asset");
+                        document.getElementById("subcategory").options[1]=new Option("DTYS Drilling","DTYS Drilling");
+                        document.getElementById("subcategory").options[1]=new Option("DS,Engineering","DS Engineering");
+                        document.getElementById("subcategory").options[1]=new Option("Directional Drilling","Directional Drilling");
+                        document.getElementById("subcategory").options[1]=new Option("DS,Liner Hanger","DS,Liner Hanger");
+                        document.getElementById("subcategory").options[1]=new Option("IMR","IMR");
+                        document.getElementById("subcategory").options[1]=new Option("Cementing","Cementing");
+                        document.getElementById("subcategory").options[1]=new Option("Mud Services","Mud Services");
+                        document.getElementById("subcategory").options[1]=new Option("RCMT","RCMT");
+                        document.getElementById("subcategory").options[1]=new Option("Reservoir,WOB","Reservoir,WOB");
+                        document.getElementById("subcategory").options[1]=new Option("TURBINE CELL","TURBINE CELL");
+                        document.getElementById("subcategory").options[1]=new Option("PTYS Well Services","PTYS Well Services");
+                        document.getElementById("subcategory").options[1]=new Option("WSS","WSS");
+                        document.getElementById("subcategory").options[1]=new Option("Material Management","Material Management");
+                        document.getElementById("subcategory").options[1]=new Option("Civil Section","Civil Section");
+                        document.getElementById("subcategory").options[1]=new Option("Electrical Section","Electrical Section");
+                        document.getElementById("subcategory").options[1]=new Option("Medical Section","Medical Section");
+                        document.getElementById("subcategory").options[1]=new Option("HR/ER","HR/ER");
+                        document.getElementById("subcategory").options[1]=new Option("F&A","F&A");
+                        document.getElementById("subcategory").options[1]=new Option("Vigilance Section","Vigilance Section");
+                        document.getElementById("subcategory").options[1]=new Option("Marine Safety","Marine Safety");
+                        document.getElementById("subcategory").options[1]=new Option("Security","Security");
+                        document.getElementById("subcategory").options[1]=new Option("Fire","Fire");
+                        document.getElementById("subcategory").options[1]=new Option("CISF","CISF");
+                        document.getElementById("subcategory").options[1]=new Option("Union / Association","Union / Association");
+                        document.getElementById("subcategory").options[1]=new Option("Others","Others");
+                        document.getElementById("subcategory").options[1]=new Option("Infocom Services","Infocom Services");
+                        document.getElementById("subcategory").options[1]=new Option("Collectives","Collectives");
+                        document.getElementById("subcategory").options[1]=new Option("Misc","Misc");
+                        break;
+					 case "Uran" :
+                        document.getElementById("subcategory").options[0]=new Option("Please select office","");
+                        document.getElementById("subcategory").options[1]=new Option("Office of Plant Manager","Office of Plant Manager");
+                        document.getElementById("subcategory").options[1]=new Option("Misc-Dronagiri Bhavan","Misc-Dronagiri Bhavan");
+                        document.getElementById("subcategory").options[1]=new Option("Office of Head Operations","Office of Head Operations");
+                        document.getElementById("subcategory").options[1]=new Option("ETP Minas","ETP Minas");
+                        document.getElementById("subcategory").options[1]=new Option("Oil Procressing Group","Oil Processing Group");
+                        document.getElementById("subcategory").options[1]=new Option("Gas Procressing Group","Gas Processing Group");
+                        document.getElementById("subcategory").options[1]=new Option("Utility Operations Group","Utility Operations Group");
+                        document.getElementById("subcategory").options[1]=new Option("Plant Operations","plant Operations");
+                        document.getElementById("subcategory").options[1]=new Option("Pipe Line Group","Pipe Line Group");
+                        document.getElementById("subcategory").options[1]=new Option("Plant Inspection","Plant Inspection");
+                        document.getElementById("subcategory").options[1]=new Option("Product And Process Control","Product And Process Control");
+                        document.getElementById("subcategory").options[1]=new Option("Planning And Monitoring/Marketing/TGS","Planning And Monitoring/Marketing/TGS");
+                        document.getElementById("subcategory").options[1]=new Option("Gail Office","Gail Office");
+                        document.getElementById("subcategory").options[1]=new Option("HSE Section","HSE Section");
+                        document.getElementById("subcategory").options[1]=new Option("CISF Fire Wing","CISF Fire Wing");
+                        document.getElementById("subcategory").options[1]=new Option("Engineering Services","Engineering Services");
+                        document.getElementById("subcategory").options[1]=new Option("Civil Section-Plant Operations","Civil Section-Plant Operations");
+
+						
+						
+                        break;
+					
+                }
+                return true;
+            }
+function fun()
+{
+name=f1.Ename.value
+	if(name=="")
+	{
+	 alert("enter your name")
+	 return false;
+	}
+gender=f1.gender.value
+	if(gender=="")
+	{
+	 alert("Please select gender")
+	 return false;
+	}
+designation=f1.Designation.value
+	if(designation=="")
+	{
+	 alert("enter your designation")
+	 return false;
+	}	
+var e=f1.Email.value;
+var a=e.length
+if(e.charAt(a-4)!=".")
+{
+  alert("enter valid email id")
+  return false;
+}
+count=0;
+for(i=0;i<a;i++)
+{
+  if(e.charCodeAt(i)==64)
+  {
+	count++;
+	}
+}
+if(count==0)
+{
+  alert("enter @ email id");
+  return false;
+}
+level=f1.level.value
+	if(designation=="")
+	{
+	 alert("enter your designation")
+	 return false;
+	}		
+m=f1.Mobile.value
+	if(m=="")
+	{
+	 alert("enter mobile no")
+	 return false;
+	}
+	
+	if(m.length!=10)
+	{
+	 alert("enter valid mobile no")
+	 return false;
+	}	
+level=f1.level.value
+	if(designation=="")
+	{
+	 alert("enter your designation")
+	 return false;
+	}	
+building=f1.bg.value
+	if(designation=="")
+	{
+	 alert("enter your buildingname")
+	 return false;
+	}		
+}
+</script>
+<style>
+*{padding:0px;margin:0px;}
+.main{
+   width:100%;height:100%;background-color:white;
+   margin:auto;
+}
+.header{
+   width:100%;height:100px;
+   background-color:#990000;
+   position:absolute;
+   <!-- border: 5px solid gold; -->
+}
+.header h3{
+color:white;
+font-size:80px;
+text-align:center;
+position:relative;
+float:right;
+ right:350px;
+ 
+   }
+.header img{
+position:relative;
+}   
+.header input{position:relative;
+left:1100px;}  
+
+.branches{width:95%;height:70px;
+padding-top:20px;
+background-color:#990000;
+color:white;position:relative;
+left:30px;
+top:110px;
+text-align:center;
+font-size:25px;
+<!-- border: 5px solid gold; -->
+
+}   
+.employee{
+padding-top:100px;
+margin:auto;
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size:25px;
+}
+</style>
+</head>
+<body>
+<div class="header">
+		<img src="ongc logo.png" height="100px" width="100px">
+		<h3>ONGC MUMBAI</h3>
+		<a href="logout.php"> <input type="submit" value="logout" 
+		style="width:50px;height:30px;background-color:#990000;color:white"></input></a>
+	</div>
+	<div class="branches">
+		NBP Green Heights,11 High,Vasudhara Bhavan,Helibase,Maker Tower,Panvel,Nhava & Uran
+	</div><br>
+	<div class="employee">
+<table style="margin:auto;">
+<tr>
+<td>
+<div class="fmain">
+<form action="insert.php" method="post" name="f1" onsubmit="return fun()" style="color:black;font-size:50px;" autocomplete="off">
+
+
+<legend>Employee Registration</legend>
+
+<table  cellspacing="20" style="text-align:left;font-size:30px;">
+<tr>
+	<th>Employee Name:-</th><td><input type="text" name="Ename" height="300"required></td>
+</tr> 
+<tr>
+	<th>Gender:-</th><td><input type="radio" name="Gender" value="male" required>male
+	<input type="radio" name="Gender" value="female">female</td>
+</tr>
+<tr>
+  <th>Designation:-</th><td><input type ="text" name="Designation" required></td>
+</tr>
+<tr>
+  <th>CPF:-</th><td><input type ="text" name="CPF" value="<?php echo $CPF?>" required></td>
+</tr>
+<tr>
+  <th>Email Id:-</th><td><input type ="text" name="Email" required></td>
+</tr>
+<tr>
+  <th>Level:-</th><td><input type ="text" name="Level" required></td>
+</tr>
+<tr>
+  <th>landline no:-</th><td><input type ="text" name="Landline" required></td>
+</tr>
+<tr>
+  <th>Mobile no:-</th><td><input type ="text" name="Mobile" required></td>
+</tr>
+<tr>
+  <th>Seating Place:-</th><td><input type ="text" name="Seat" required></td>
+</tr>
+<tr>
+  <th> Building:-</th>
+  <td><select name="Building" class="required-entry" id="category" required onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);">
+ <option>Please Select Building</option>
+ <option value="NBP Green Heights">NBP Green Heights</option>
+ <option value="11 High">11 High</option>
+ <option value="Vasudhara Bhavan">Vasudhara Bhavan</option>
+ <option value="Panvel">Panvel</option>
+ <option value="Nhava">Nhava</option>
+ <option value="Uran">Uran</option>
+ </select></td>
+ <tr>
+ <th>Office:</th>
+            <!-- <script type="text/javascript" language="JavaScript"> -->
+            <!-- document.write('<select name="subcategory" id="subcategory"><option value="">Please select office</option></select>') -->
+            <!-- </script> -->
+            <!-- <noscript> -->
+                <th><select name="Office" id="subcategory" required >
+                    <option value="">Please select office</option>
+                </select></th>
+
+
+</tr>
+
+<tr>
+    <td colspan="1"><input type="submit" name="submit" value="submit" style="background-color:#990000;color:white; font-size:20px; width:150px;height:70px;"></td>
+	<td colspan="3"><input type="reset"  name="reset" style="background-color:#990000;color:white;font-size:20px; width:150px;height:70px;"></td>
+</tr>
+  </table>
+  </form>
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+
+
+
+
+
+</script>
+</body>
+</html>

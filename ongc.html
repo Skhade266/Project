@@ -1,0 +1,152 @@
+<html>
+<head>
+		<script src="jquery.js"></script>
+		<script src="bootstrap.js"></script>
+		
+</head>
+<style>
+*{padding:0px;margin:0px;}
+.main{
+   width:100%;height:100%;background-color:white;
+   margin:auto;
+}
+.header{
+   width:100%;height:100px;
+   background-color:#990000;
+   position:absolute;
+   <!-- border: 5px solid gold; -->
+}
+.header h3{
+color:white;
+font-size:80px;
+text-align:center;
+position:relative;
+float:right;
+ right:500px;
+ 
+   }
+.header img{
+position:relative;
+}   
+.header input{
+position:relative;
+left:85%;
+
+}
+.branches{width:95%;height:70px;
+padding-top:20px;
+background-color:#990000;
+color:white;position:relative;
+left:30px;
+top:110px;
+text-align:center;
+font-size:25px;
+<!-- border: 5px solid gold; -->
+
+}   
+
+<!-- body {font-family: Arial, Helvetica, sans-serif;} -->
+<!-- * {box-sizing: border-box} -->
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 90%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: 	#DCDCDC;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color:	#DCDCDC;
+  color:black;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #990000;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0px;
+  <!-- border: 8px solid white; -->
+  border: 2px solid black;
+  <!-- border: 8px solid green; -->
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+ 
+}
+
+button:hover {
+  opacity:1;
+}
+
+
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+.form {
+padding-left:5%;
+padding-top:1%;
+height:400px;
+width:30%;
+background-color:;
+position:relative;
+top:25%;
+left:35%;
+<!-- border:2px solid black;  -->
+<!-- border-bottom:5px solid red; -->
+<!-- border-right:5px solid red; -->
+<!-- border-left:5px solid red; -->
+
+}
+</style>
+<body>
+<div class="main" shadow>
+	<div class="header">
+
+		<img src="ongc logo.png" height="100px" width="100px">
+		<h3>ONGC MUMBAI</h3>
+		<!-- <input type="submit" value="logout" style="width:50px;height:30px;background-color:#990000;color:white"></input> -->
+	</div>
+	<div class="branches">
+		NBP Green Heights,11 High,Vasudhara Bhavan,Helibase,Maker Tower,Panvel,Nhava & Uran
+	</div><br>
+	<div class="form">
+	<table>
+	<form action="loginproc.php" method="post" autocomplete="off">
+	 <div class="container1">
+		<tr><label for="uname"><b>CPF Number</b></label></tr>
+		
+		<tr><input type="text" placeholder="Enter CPF" name="CPF"required >
+		</tr>
+		<tr><label for="psw"><b>Password</b></label></tr>
+		<tr><input type="password" placeholder="Enter Password" name="psw" required ></tr>
+		<tr><td><button type="submit">Login</button></td>
+	    <td><button onclick= "window.location.href='signin.html';">New Registration</button></td></tr>
+		<tr>
+		<td><span class="psw"><a href="findaccount.html">Forgot password?</a></span></td></tr>
+	 </div>
+
+	 <!-- <div class="container2" style="background-color:#f1f1f1"> -->
+		<!-- <button onclick= "window.location.href='adminlogin.html';">Admin LogIn</button> -->
+		<!-- <button onclick= "window.location.href='signin.html';">New Registration</button> -->
+		<!-- <span class="psw">Forgot <a href="#">password?</a></span> -->
+	 <!-- </div> -->
+	 </table>
+	</form>
+
+</div>
+		
+</div>
+</body>
+</html>
